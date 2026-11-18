@@ -1,0 +1,32 @@
+url: ~
+template:
+  bootstrap: 5
+
+reference:
+- title: Grid allocation
+  contents:
+  - allocate_grid
+  - allocate_grid_simple
+  - pairwise_adjacency_options
+  - post_process_options
+  - as.data.frame.gridmap
+  - plot.gridmap
+  - grid_to_sf
+- title: Parameter estimation
+  contents:
+  - estimate_parameters
+  - estimate_parameters_from_data
+  - grid_dimensions
+- title: Geometry helpers
+  contents:
+  - polygon_centroid
+  - pca_angle
+  - compute_spacers
+  - adjacency_graph
+  - embed_graph
+- title: Cartograms
+  contents:
+  - dorling_cartogram
+- title: Data
+  contents:
+  - us_states

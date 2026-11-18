@@ -1,0 +1,40 @@
+Package: gridmapper
+Title: Allocate Geographic Features to Grid Cartograms
+Version: 0.1.0.9000
+Authors@R: c(
+    person("Maintainer", "Name", , "maintainer@example.com", role = c("aut", "cre"),
+           comment = "TODO: replace with the R package maintainer"),
+    person("Dany", "Laksono", role = c("aut", "cph"),
+           comment = "Author of the original 'gridmapper' JavaScript library")
+  )
+Description: Allocates geographic points or polygons to the cells of a
+    rectangular or hexagonal grid by solving a mixed integer programme that
+    minimises displacement from geographic position, with a compactness
+    parameter controlling how tightly features cluster. Supports automatic
+    estimation of grid dimensions, compactness and PCA rotation, spacer
+    cells, adjacency rewards, simulated annealing post-processing, and
+    Dorling and Demers cartograms. A port of the 'gridmapper' JavaScript
+    library, itself inspired by Jo Wood's grid map allocation method.
+License: file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 4.1.0)
+Imports:
+    cli,
+    graphics,
+    highs,
+    Matrix,
+    rlang,
+    sf,
+    stats,
+    utils
+Suggests:
+    jsonlite,
+    testthat (>= 3.0.0),
+    withr
+LinkingTo:
+    cpp11
+Config/testthat/edition: 3
+LazyData: true
+Config/roxygen2/version: 8.1.0
