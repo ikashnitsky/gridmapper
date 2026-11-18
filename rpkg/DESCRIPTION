@@ -2,10 +2,13 @@ Package: gridmapper
 Title: Allocate Geographic Features to Grid Cartograms
 Version: 0.1.0.9000
 Authors@R: c(
-    person("Maintainer", "Name", , "maintainer@example.com", role = c("aut", "cre"),
-           comment = "TODO: replace with the R package maintainer"),
-    person("Dany", "Laksono", role = c("aut", "cph"),
-           comment = "Author of the original 'gridmapper' JavaScript library")
+    person(
+      given = "Ilya",
+      family = "Kashnitsky",
+      role = c("aut", "cre"),
+      email = "ilya.kashnitsky@gmail.com",
+      comment = c(ORCID = "0000-0003-1835-8687")
+    )
   )
 Description: Allocates geographic points or polygons to the cells of a
     rectangular or hexagonal grid by solving a mixed integer programme that
